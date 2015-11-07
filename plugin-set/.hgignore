@@ -1,0 +1,9 @@
+syntax: glob
+obj/*
+bin/*
+*.depend
+*.layout
+*.dll
+*.exe
+*.e8s.cd
+*.mak

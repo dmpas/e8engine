@@ -1,0 +1,33 @@
+#If Client Then
+    Message("Client1!");
+    Message("Client2!");
+#ElseIf Script Then
+    Message("Script1!");
+    Message("Script2!");
+#EndIf
+
+#If Client Or Script Then
+    Message("GOOD");
+    #If Client Then
+        Message("FAILED");
+    #Else
+        Message("GOOD");
+        #If Not Server Then
+            Message("GOOD");
+        #EndIf
+    #EndIf
+#ElseIf Script Then
+    Message("FAILED");
+#Else
+    Message("FAILED");
+#EndIf
+
+НекаяПеременная = 
+	#Если Скрипт Тогда
+		"это скрипт"
+	#Иначе
+		"это не скрипт"
+	#КонецЕсли
+;
+
+Сообщить(НекаяПеременная);

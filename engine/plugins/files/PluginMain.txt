@@ -1,0 +1,7 @@
+E8.Identifier PLUGIN_FILES
+E8.Attach file_writer_class.hpp
+E8.Attach file_reader_class.hpp
+E8.Attach file_text_writer.hpp
+E8.Attach file_class.hpp
+E8.Attach main.hpp
+E8.Main

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="e8core-static" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Static">
+				<Option output="bin/Static/e8core-static" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Static/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-pg" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg -lgmon" />
+				</Linker>
+			</Target>
+			<Target title="Shared">
+				<Option output="bin/Static/libe8core-shared" prefix_auto="0" extension_auto="1" />
+				<Option working_dir="bin/Static" />
+				<Option object_output="obj/Static/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-Wall" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DFULL_STATIC" />
+			<Add option="$(GLOBAL_CFLAGS)" />
+			<Add directory="." />
+		</Compiler>
+		<Unit filename="e8core/commands/command.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/commands/command.h" />
+		<Unit filename="e8core/env/_array.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/_array.h" />
+		<Unit filename="e8core/env/_command.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/_command.h" />
+		<Unit filename="e8core/env/_comparevalues.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/_comparevalues.h" />
+		<Unit filename="e8core/env/_keyvalue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/_keyvalue.h" />
+		<Unit filename="e8core/env/_map.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/_map.h" />
+		<Unit filename="e8core/env/_numerics.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/_numerics.h" />
+		<Unit filename="e8core/env/_paths.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/_paths.h" />
+		<Unit filename="e8core/env/_strings.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/_strings.h" />
+		<Unit filename="e8core/env/_valuelist.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/_valuelist.h" />
+		<Unit filename="e8core/env/_valuelistitem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/_valuelistitem.h" />
+		<Unit filename="e8core/env/_valuetable.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/_valuetable.h" />
+		<Unit filename="e8core/env/collection.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/collection.h" />
+		<Unit filename="e8core/env/e8stdlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/e8stdlib.h" />
+		<Unit filename="e8core/env/env.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/env.h" />
+		<Unit filename="e8core/env/env_p.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/env_p.h" />
+		<Unit filename="e8core/env/macro.h" />
+		<Unit filename="e8core/env/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/options.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/options.h" />
+		<Unit filename="e8core/env/runtime_errors.h" />
+		<Unit filename="e8core/env/scope.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/scope.h" />
+		<Unit filename="e8core/env/scope_p.h" />
+		<Unit filename="e8core/env/sharedlibs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/sharedlibs.h" />
+		<Unit filename="e8core/env/simpleenum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/simpleenum.h" />
+		<Unit filename="e8core/env/stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/stack.h" />
+		<Unit filename="e8core/env/unit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/unit.h" />
+		<Unit filename="e8core/env/utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/env/utils.h" />
+		<Unit filename="e8core/plugin/plugin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/plugin/plugin.h" />
+		<Unit filename="e8core/plugin/plugin.hpp" />
+		<Unit filename="e8core/translator/lexer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/translator/lexer.h" />
+		<Unit filename="e8core/translator/translator.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/translator/translator.h" />
+		<Unit filename="e8core/utf/tables.h" />
+		<Unit filename="e8core/utf/utf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/utf/utf.h" />
+		<Unit filename="e8core/variant/exceptions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/variant/gregorian.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/variant/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/variant/numeric.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/variant/object.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/variant/objpool.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/variant/string.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/variant/variant.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="e8core/variant/variant.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

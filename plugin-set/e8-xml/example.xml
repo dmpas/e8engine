@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Metrics SiteId="Site ID" Sitename="Site Name" DeviceId="Device ID" Devicename="Device Name">
+  <Properties>
+    <MacAddress>00:b0:9d:bd:65:32</MacAddress>
+    <IpAddress>10.10.49.8</IpAddress>
+    <HostName>Cam-12412210</HostName>
+    <HwPlatform>2300</HwPlatform>
+    <Timezone>4</Timezone>
+    <DST>0</DST>
+    <DeviceType>0</DeviceType>
+    <SerialNumber>12412210</SerialNumber>
+  </Properties>
+  <ReportData Interval="15">
+    <Report Date="2014-04-07">
+      <Object Id="0" DeviceId="Device ID" Devicename="Device Name" ObjectType="0" Name="New Zone0">
+        <Count StartTime="14:00:00" EndTime="14:15:00" Enters="12" Exits="13" Status="0" />
+      </Object>
+    </Report>
+  </ReportData>
+</Metrics>

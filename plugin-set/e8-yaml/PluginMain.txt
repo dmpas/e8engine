@@ -1,0 +1,3 @@
+E8.Identifier PLUGIN_YAML_CPP
+E8.Attach YamlManager.hpp
+E8.Main

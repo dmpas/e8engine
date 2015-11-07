@@ -1,0 +1,28 @@
+# Для указанія поясненій знак # должен быть строго первым
+
+# Опредѣлитель - указывается для использованія в качествѣ защитника заголовочнаго файла
+E8.Identifier PLUGIN_GTK_PORT
+
+# Включить и разобрать файл
+E8.Attach TemplateClass.hpp
+E8.Attach GtkPortWindow.hpp
+E8.Attach GtkPortEntry.hpp
+E8.Attach GtkPortBox.hpp
+E8.Attach GtkPortLabel.hpp
+E8.Attach GtkPortButton.hpp
+E8.Attach GtkPortTreeView.hpp
+E8.Attach GtkClass.hpp
+
+# Выводит главную подпрограмму модуля e8_entry
+E8.Main
+
+# Для сборки этого файла используется пользовательская команда сборки CodeBlocks:
+#    $(plugen) --in $file --header obj/tmp.hpp --cxx obj/tmp.cpp
+#    $compiler $options $includes -I. -c obj/tmp.cpp -o $object
+# $(plugen) - перемѣнная, указывающая на орудіе e8plugen
+# $(compiler) - тут обычно подставляется $(GCC)
+# В случаѣ использованія орудія cbp2make необходимо явно указывать GCC в параметрах make:
+#   $(MAKE) -f file.mak GCC=gcc
+#  или
+#   export GCC=gcc
+#   $(MAKE) -f file.mak

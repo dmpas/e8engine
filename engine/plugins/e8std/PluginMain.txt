@@ -1,0 +1,5 @@
+E8.Identifier E8_PLUGIN_STD
+E8.Attach random.hpp
+E8.Attach BinaryData.hpp
+E8.Attach common.hpp
+E8.Main

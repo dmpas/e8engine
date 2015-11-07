@@ -1,0 +1,8 @@
+syntax: glob
+FileTextWriter.cpp
+FileTextWriter.hpp
+FileTextWriter.txt
+codegen.depend
+codegen.layout
+obj/*
+bin/*

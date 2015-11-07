@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="e8-xml/e8-xml.cbp" />
+		<Project filename="e8-pq/e8-pq.cbp" />
+		<Project filename="e8-epf/e8-epf.cbp" />
+		<Project filename="e8-yaml/e8-yaml.cbp" />
+		<Project filename="e8-COM/e8-plugins-OLE.cbp" />
+		<Project filename="e8-sqlite/libe8sqlite.cbp" />
+		<Project filename="e8-gtk/e8-gtk.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

@@ -1,0 +1,5 @@
+E8.Identifier PLUGIN_GLIB_XMLPP
+E8.Attach XmlNodeType.hpp
+E8.Attach XmlReader.hpp
+E8.Attach XmlWriter.hpp
+E8.Main

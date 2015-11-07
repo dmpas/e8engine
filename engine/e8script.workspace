@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="e8core/utf/e8core-utf.cbp" />
+		<Project filename="e8core/variant/e8core-variant.cbp">
+			<Depends filename="e8core/utf/e8core-utf.cbp" />
+		</Project>
+		<Project filename="e8core/commands/e8core-commands.cbp">
+			<Depends filename="e8core/utf/e8core-utf.cbp" />
+			<Depends filename="e8core/variant/e8core-variant.cbp" />
+		</Project>
+		<Project filename="e8core/translator/e8core-translator.cbp">
+			<Depends filename="e8core/utf/e8core-utf.cbp" />
+			<Depends filename="e8core/variant/e8core-variant.cbp" />
+			<Depends filename="e8core/commands/e8core-commands.cbp" />
+		</Project>
+		<Project filename="e8core/env/e8core-environment.cbp">
+			<Depends filename="e8core/utf/e8core-utf.cbp" />
+			<Depends filename="e8core/variant/e8core-variant.cbp" />
+			<Depends filename="e8core/commands/e8core-commands.cbp" />
+			<Depends filename="e8core/translator/e8core-translator.cbp" />
+		</Project>
+		<Project filename="e8core-static.cbp" />
+		<Project filename="e8script.cbp">
+			<Depends filename="e8core/utf/e8core-utf.cbp" />
+			<Depends filename="e8core/variant/e8core-variant.cbp" />
+			<Depends filename="e8core/commands/e8core-commands.cbp" />
+			<Depends filename="e8core/translator/e8core-translator.cbp" />
+			<Depends filename="e8core/env/e8core-environment.cbp" />
+		</Project>
+		<Project filename="plugins/files/files.cbp">
+			<Depends filename="e8core/utf/e8core-utf.cbp" />
+			<Depends filename="e8core/variant/e8core-variant.cbp" />
+			<Depends filename="e8core/env/e8core-environment.cbp" />
+		</Project>
+		<Project filename="plugins/e8std/e8std.cbp">
+			<Depends filename="e8core/utf/e8core-utf.cbp" />
+			<Depends filename="e8core/variant/e8core-variant.cbp" />
+			<Depends filename="e8core/env/e8core-environment.cbp" />
+		</Project>
+		<Project filename="testapp/test-variant/test-variant.cbp">
+			<Depends filename="e8core/utf/e8core-utf.cbp" />
+			<Depends filename="e8core/variant/e8core-variant.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>
